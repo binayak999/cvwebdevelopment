@@ -1,4 +1,6 @@
 ./scss
 scss/
 ./.idea
-.idea
+.idea/
+.DS_Store/
+.sass-cache/0c2a1d02712fff0f26996af2e8765cfe1018306f/
