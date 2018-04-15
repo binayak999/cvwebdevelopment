@@ -2,6 +2,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -11,6 +12,7 @@ p {
   line-height: 24px;
 }
 
+/*classes*/
 .fixwidth {
   width: 80%;
   margin: 0 auto;
@@ -30,6 +32,7 @@ p {
   z-index: 1;
 }
 
+/*header section*/
 header {
   width: 100%;
   display: flex;
@@ -42,8 +45,35 @@ header {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 767px) {
+  header .logo-menu {
+    margin: 10px;
+  }
+}
 header div img {
   width: 300px;
+}
+@media only screen and (max-width: 767px) {
+  header div .fa-bars {
+    margin: 20px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  header div .fa-bars {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header div nav {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    right: -100%;
+    opacity: 1;
+    overflow: hidden;
+    transition: all ease-out 0.5s;
+  }
 }
 header div nav ul {
   display: flex;
@@ -88,6 +118,7 @@ header div:nth-of-type(2) {
   flex-grow: 2;
 }
 
+/*section*/
 section .mainsection {
   display: flex;
   justify-content: center;
@@ -98,6 +129,10 @@ section .mainsection .child-div {
   order: 1;
   padding: 3% 1% 0;
   box-sizing: border-box;
+}
+section .mainsection .child-div a {
+  color: #000;
+  text-decoration: none;
 }
 @media only screen and (min-width: 767px) {
   section .mainsection .child-div {
@@ -151,6 +186,11 @@ section .about-section .image-mine img:hover {
   box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.4);
   transition: 0.3s all ease-in-out;
   transform: scale(1.01, 1.01);
+}
+@media only screen and (max-width: 767px) {
+  section .about-section .image-mine img {
+    width: 100%;
+  }
 }
 section .about-section .about-me {
   padding-left: 3%;
@@ -213,6 +253,7 @@ section .social-page ul li .linkedin:hover {
   background: #0077B5;
 }
 
+/*contact page*/
 .contact-page .fixwidth {
   display: flex;
 }
@@ -292,6 +333,7 @@ footer .fixwidth small {
   padding-bottom: 20px;
 }
 
+/*modal_gp page*/
 .fixwidth h5 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -347,6 +389,22 @@ footer .fixwidth small {
 }
 .refreces-links li {
   margin-bottom: 10px;
+}
+
+.mystyle {
+  right: 0;
+  height: auto;
+  transition: all ease-out 0.5s;
+}
+
+.btn-me {
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+.btn-me:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

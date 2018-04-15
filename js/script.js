@@ -1,9 +1,7 @@
-(function(){
-    var a = document.getElementsByClassName('.logo-menu');
-
-    function showMenu(){
-        // a.style.display('block');
-        console.log("hey");
-
-    }
-})();
+function showMenu(){
+    var element = document.getElementById('shownav');
+    element.classList.toggle("mystyle");
+}
+function goBack() {
+    window.history.back();
+}

@@ -8,6 +8,7 @@
     <title>Binayak Dhakal</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Lato|Strait|Oleo+Script" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,17 +17,19 @@
     <div class="fixwidth">
         <header>
             <div class="">
-                <img src="images/logo.png" alt="">
+                <a href="index.html" > <img src="images/logo.png" alt="" class="logo-menu"></a>
             </div>
             <div>
-                <nav>
+                <i class="fas fa-bars" href="javascript:void(0)" onclick="showMenu()"></i>
+                <nav id="shownav">
                     <ul>
+
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="cv.html">Cv</a></li>
                         <li><a href="social.html">Social</a></li>
                         <li><a href="models_gp.html">Model_Gp</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="contact.html"  class="active">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -79,5 +82,6 @@
     </div>
 </footer>
 <!--footer-->
+<script type="application/javascript" src="js/script.js"></script>
 </body>
 </html>
